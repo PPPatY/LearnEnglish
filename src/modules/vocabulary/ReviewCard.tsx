@@ -109,7 +109,7 @@ export default function ReviewCard() {
             <button
               key={g.grade}
               onClick={() => onGrade(g.grade)}
-              className={`rounded-lg px-6 py-2 text-sm font-medium text-white transition-colors ${g.cls}`}
+              className={`cursor-pointer rounded-lg px-6 py-2 text-sm font-medium text-white transition-colors ${g.cls}`}
             >
               {g.label}
             </button>

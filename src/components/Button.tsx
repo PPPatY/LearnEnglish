@@ -63,7 +63,7 @@ export default function Button({
   return (
     <button
       {...rest}
-      className={`inline-flex items-center justify-center rounded-lg font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 ${
+      className={`inline-flex cursor-pointer items-center justify-center rounded-lg font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 ${
         VARIANTS[variant]
       } ${sizeCls} ${fullWidth ? 'w-full' : ''} ${active ? 'ring-2 ring-brand-400' : ''} ${className}`}
     >

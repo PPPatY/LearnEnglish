@@ -86,7 +86,7 @@ export default function WritingPage() {
             <button
               key={task.id}
               onClick={() => selectTask(task.id)}
-              className="rounded-xl border border-slate-200 bg-white p-5 text-left transition-shadow hover:shadow-md"
+              className="cursor-pointer rounded-xl border border-slate-200 bg-white p-5 text-left transition-shadow hover:shadow-md"
             >
               <div className="font-semibold">{task.title}</div>
               <div className="mt-1 text-sm text-slate-500">{task.description}</div>

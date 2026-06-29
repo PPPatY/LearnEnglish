@@ -175,7 +175,7 @@ export default function SpeakingPage() {
       )
     }
     return (
-      <button onClick={() => handleTranslateText(text, tkey)} className={`mt-1 flex items-center gap-1 text-xs ${btnCls}`}>
+      <button onClick={() => handleTranslateText(text, tkey)} className={`mt-1 flex cursor-pointer items-center gap-1 text-xs ${btnCls}`}>
         <Icon name="translate" size={13} /> 显示翻译
       </button>
     )
@@ -222,7 +222,7 @@ export default function SpeakingPage() {
                 key={scene.id}
                 onClick={() => handleSelectScene(scene)}
                 disabled={!support.recognition}
-                className="rounded-xl border border-slate-200 bg-white p-5 text-left transition-shadow hover:shadow-md disabled:opacity-50"
+                className="cursor-pointer rounded-xl border border-slate-200 bg-white p-5 text-left transition-shadow hover:shadow-md disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <div className="font-semibold">{scene.title}</div>
                 <div className="mt-1 text-sm text-slate-500">{scene.description}</div>
@@ -292,7 +292,7 @@ export default function SpeakingPage() {
                 else await handleUserSpeak()
               }}
               disabled={aiThinking || !support.recognition}
-              className={`flex items-center justify-center rounded-full p-6 text-white transition-all disabled:opacity-50 ${
+              className={`flex cursor-pointer items-center justify-center rounded-full p-6 text-white transition-all disabled:cursor-not-allowed disabled:opacity-50 ${
                 listening ? 'animate-pulse bg-red-500 hover:bg-red-600' : 'bg-brand-500 hover:bg-brand-600'
               }`}
             >
